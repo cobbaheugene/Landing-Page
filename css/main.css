@@ -29,8 +29,17 @@ a{
 }
 
 nav{
-    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    text-transform: uppercase;
 }
+
+
 
 header{
     display: flex;
