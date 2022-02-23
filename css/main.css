@@ -38,8 +38,34 @@ header{
 }
 
 .menu{
-    width: 2em;
+    width: 3em;
     margin-top: -.6em;
     cursor: pointer;
+}
+
+h1{
+    font-size: 3rem;
+    margin-top: 2em;
+    line-height: 3.3rem;
+}
+
+.sub-head{
+    font-size: 1.4rem;
+}
+
+section.hero{
+    color: white;
+    height: 90vh;
+}
+
+.down-arrow{
+    stroke: white;
+    position: absolute;
+    width: 1em;
+    bottom: 2em;
+}
+
+path{
+    fill: white;
 }
 
