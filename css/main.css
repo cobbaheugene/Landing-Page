@@ -117,4 +117,11 @@ path {
 .more-info .desc {
   line-height: 1.5rem;
 }
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+    font-family: 'poppins', sans-serif;
+  }
+}
 /*# sourceMappingURL=main.css.map */
