@@ -183,9 +183,9 @@ path{
         }
     }
 
-    .features {
+    .feature{
         display: grid;
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(2, auto);
         gap: 3em;
         margin-bottom: 8em;
 
@@ -198,4 +198,26 @@ path{
             width: 25em;
         }
     }
+
+    .feature.Left{
+        grid-template-areas: 
+        left-right;
+
+        img{
+            grid-area: left;
+        }
+
+        .content{
+            text-align: left;
+            width: 25em;
+            justify-self: left;
+        }
+    }
 } 
+
+@media only screen and (min-width: 1200px){
+    .wrapper{
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
