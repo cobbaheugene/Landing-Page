@@ -20,7 +20,7 @@ a{
     height:100vh;
     width: 100%;
     z-index: -1;
-    animation: introload 2s forwards;
+    //animation: introload 2s forwards;
     /* overflow: hidden; */
 }
 
@@ -190,7 +190,7 @@ path{
         gap: 3em;
         margin-bottom: 8em;
 
-        img{
+        .image-wrapper{
             width: 25em;
         }
 
@@ -200,29 +200,28 @@ path{
         }
     }
 
-    .feature.Left{
-        grid-template-areas: 
-        left-right;
+//     .feature.Left{
+//         grid-template-areas:left-right;
 
-        img{
-            grid-area: left;
-        }
+//         img{
+//             grid-area: left;
+//         }
 
-        .content{
-            text-align: left;
-            width: 25em;
-            justify-self: left;
-        }
-    }
-} 
+//         .content{
+//             text-align: left;
+//             width: 25em;
+//             justify-self: left;
+//         }
+//     }
+// } 
 
-@media only screen and (min-width: 1200px){
-    .wrapper{
-        width: 1200px;
-        margin: 0 auto;
-    }
+// @media only screen and (min-width: 1200px){
+//     .wrapper{
+//         width: 1200px;
+//         margin: 0 auto;
+//     }
 
-    .feature{
-        gap: 0;
-    }
-}
+//     .feature{
+//         gap: 0;
+//     }
+// }
