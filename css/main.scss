@@ -198,30 +198,29 @@ path{
             text-align: right;
             width: 25em;
         }
+    
+    .feature.left{
+        grid-template-areas:left-right;
+
+        .image-wrapper8{
+            grid-area: left;
+        }
+
+        .content2{
+            text-align: left;
+            width: 25em;
+            justify-self: left;
+        }
+    }
+} 
+
+@media only screen and (min-width: 1200px) {
+    .wrapper{
+        width: 1200px;
+        margin: 0 auto;
     }
 
-//     .feature.Left{
-//         grid-template-areas:left-right;
-
-//         img{
-//             grid-area: left;
-//         }
-
-//         .content{
-//             text-align: left;
-//             width: 25em;
-//             justify-self: left;
-//         }
-//     }
-// } 
-
-// @media only screen and (min-width: 1200px){
-//     .wrapper{
-//         width: 1200px;
-//         margin: 0 auto;
-//     }
-
-//     .feature{
-//         gap: 0;
-//     }
-// }
+    .feature{
+        gap: 0;
+    }
+}

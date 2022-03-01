@@ -196,27 +196,5 @@ path {
     text-align: right;
     width: 25em;
   }
-  .feature.Left {
-        grid-template-areas: left-right;
-  }
-  .feature.Left img {
-    grid-area: left;
-  }
-  .feature.Left .content {
-    text-align: left;
-    width: 25em;
-    -ms-grid-column-align: left;
-        justify-self: left;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .wrapper {
-    width: 1200px;
-    margin: 0 auto;
-  }
-  .feature {
-    gap: 0;
-  }
 }
 /*# sourceMappingURL=main.css.map */
