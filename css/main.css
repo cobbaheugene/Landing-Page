@@ -182,12 +182,15 @@ path {
     fill: black;
   }
   .feature {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (auto)[2];
-        grid-template-columns: repeat(2, auto);
-    gap: 3em;
-    margin-bottom: 8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    gap: 1em;
+    margin-bottom: 2em;
   }
   .feature .image-wrapper {
     width: 25em;
@@ -195,6 +198,39 @@ path {
   .feature .content {
     text-align: right;
     width: 25em;
+    -ms-grid-column-align: right;
+        justify-self: right;
+    margin-right: 1em;
+  }
+  .feature-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+  .feature-left .image-wrapper1 {
+    width: 25em;
+  }
+  .feature-left .content1 {
+    text-align: left;
+    width: 25em;
+    -ms-grid-column-align: left;
+        justify-self: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .feature {
+    gap: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -185,29 +185,34 @@ path{
     }
 
     .feature{
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 3em;
-        margin-bottom: 8em;
+        display: flex;
+       flex-flow: row;
+        gap: 1em;
+        margin-bottom: 2em;
 
         .image-wrapper{
             width: 25em;
         }
 
-        .content{
-            text-align: right;
+            .content{
+                text-align: right;
+                width: 25em;
+                justify-self: right;
+                margin-right: 1em;
+            }
+    }
+    .feature-left{
+       display: flex;
+       flex-flow: row-reverse;
+       gap: 1em;
+       margin-bottom: 2em;
+
+        .image-wrapper1{
             width: 25em;
         }
-    
-    .feature.left{
-        grid-template-areas:left-right;
 
-        .image-wrapper8{
-            grid-area: left;
-        }
-
-        .content2{
-            text-align: left;
+        .content1{
+            text-align:left;
             width: 25em;
             justify-self: left;
         }
