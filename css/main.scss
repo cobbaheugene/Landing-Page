@@ -20,7 +20,7 @@ a{
     height:100vh;
     width: 100%;
     z-index: -1;
-    //animation: introload 2s forwards;
+    animation: introload 2s forwards;
     /* overflow: hidden; */
 }
 
@@ -83,12 +83,13 @@ section.hero{
     color: white;
     height: 90vh;
 
-    .down-arrow{
-        stroke: white;
+    .tennisball{
         position: absolute;
-        width: 1em;
-        bottom: 2em;
+        width: 6em;
+        bottom: 1em;
+        animation: bounce 1s infinite;
     }
+    //margin-bottom: 20em;
 }
 
 path{
@@ -110,6 +111,7 @@ path{
     .desc{
         line-height: 1.5rem;
     }
+    margin-top: 15em;
 }
 
 @media only screen and (min-width: 680px) {
@@ -228,4 +230,27 @@ path{
     .feature{
         gap: 0;
     }
+}
+
+@keyframes introload {
+    from{
+        clip-path: polygon(0 0, 100% 0, 95% 0, 0 0);
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+.tennisball {
+    animation: bounce 1s infinite;
 }

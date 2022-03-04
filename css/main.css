@@ -20,6 +20,8 @@ a {
   height: 100vh;
   width: 100%;
   z-index: -1;
+  -webkit-animation: introload 2s forwards;
+          animation: introload 2s forwards;
   /* overflow: hidden; */
 }
 
@@ -91,15 +93,20 @@ section.hero {
   height: 90vh;
 }
 
-section.hero .down-arrow {
-  stroke: white;
+section.hero .tennisball {
   position: absolute;
-  width: 1em;
-  bottom: 2em;
+  width: 6em;
+  bottom: 1em;
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
 }
 
 path {
   fill: white;
+}
+
+.more-info {
+  margin-top: 15em;
 }
 
 .more-info img {
@@ -232,5 +239,62 @@ path {
   .feature {
     gap: 0;
   }
+}
+
+@-webkit-keyframes introload {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 95% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 95% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes introload {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 95% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 95% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.tennisball {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
 }
 /*# sourceMappingURL=main.css.map */
