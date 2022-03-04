@@ -89,7 +89,7 @@ section.hero{
         bottom: 1em;
         animation: bounce 1s infinite;
     }
-    //margin-bottom: 20em;
+
 }
 
 path{
@@ -111,7 +111,7 @@ path{
     .desc{
         line-height: 1.5rem;
     }
-    margin-top: 15em;
+    margin-top: 1em;
 }
 
 @media only screen and (min-width: 680px) {
@@ -119,11 +119,15 @@ path{
         margin: 1.5em 5em;
         font-family: 'poppins', sans-serif;
     }
+
 } 
 
 @media only screen and (min-width: 920px) {
     .menu{
        display: none; 
+    }
+    .more-info{
+        margin-top: 15em;
     }
 
     nav{

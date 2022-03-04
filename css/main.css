@@ -106,7 +106,7 @@ path {
 }
 
 .more-info {
-  margin-top: 15em;
+  margin-top: 1em;
 }
 
 .more-info img {
@@ -135,6 +135,9 @@ path {
 @media only screen and (min-width: 920px) {
   .menu {
     display: none;
+  }
+  .more-info {
+    margin-top: 15em;
   }
   nav {
     -webkit-transform: translateX(0);
