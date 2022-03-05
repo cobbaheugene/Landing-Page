@@ -33,7 +33,7 @@ nav{
     position: fixed;
     right: 0;
     top: 0;
-    background: white;
+    background:white;
     height: 100vh;
     width: 50%;
     z-index: 999;
@@ -44,7 +44,7 @@ nav{
     ul{
         list-style-type: none;
         padding: 0%;
-        margin-top: 8em;
+        margin-top: 4em;
 
         a{
             color: black;
@@ -56,6 +56,10 @@ nav{
             } 
         }
     }
+    .close{
+        background-color: blue;
+        margin-top: 1em;
+    }
 }
 
 header{
@@ -63,7 +67,7 @@ header{
     justify-content: space-between;
 
     svg{
-        width: 3em;
+        width: 2em;
         margin-top: -.6em;
         cursor: pointer;
     }
@@ -77,6 +81,7 @@ h1{
 
 .sub-head{
     font-size: 1.4rem;
+    font-weight: bold;
 }
 
 section.hero{
@@ -114,6 +119,10 @@ path{
     margin-top: 1em;
 }
 
+.open-nav{
+    transform: translateX(0);
+}
+
 @media only screen and (min-width: 680px) {
     body{
         margin: 1.5em 5em;
@@ -125,6 +134,10 @@ path{
 @media only screen and (min-width: 920px) {
     .menu{
        display: none; 
+    }
+
+    .close{
+        display: none;
     }
     .more-info{
         margin-top: 15em;
@@ -139,7 +152,8 @@ path{
         background: none;
 
         svg.close{
-            display: none;
+            display: block;
+            color: red;
         }
 
         ul{
