@@ -13,7 +13,7 @@ a{
     position: absolute;
     top: 0%;
     left: 0%;
-    background: url('../images/Shoe\ 1.jpg');
+    background: url('../images/perfect\ match.jpg');
     background-size: cover;
     background-position-x: 20%;
     background-position-y: 20%;
@@ -80,7 +80,7 @@ h1{
 }
 
 section.hero{
-    color: white;
+    color:yellow;
     height: 90vh;
 
     .tennisball{
@@ -147,9 +147,9 @@ path{
             margin: 0;
 
             a{
-                color: white;
+                color: yellow;
                 padding: .5em 1.5em;
-                font-size: .9rem;
+                font-size: 1.1rem;
 
                 &:hover{
                     background: none;
